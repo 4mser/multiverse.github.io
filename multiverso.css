@@ -1,0 +1,1017 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;  
+}
+
+
+.gradient {
+    background: linear-gradient(-45deg, #9143a4, #0b0c34, #3a548a, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+     
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.s1 {
+    z-index: 123;
+}
+
+.s2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* .section {
+    background-color: #10121F;
+} */
+
+
+/* .s1 {
+    background: #10121F;
+}
+
+.s2 {
+    background: #10121F;
+}
+
+.s3 {
+    background: #10121F;
+}
+
+.s4 {
+    background: #10121F;
+} */
+
+/* .section {
+   background: #030c13;
+} */
+
+/* Menú navegación */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    width: 100%;
+    height: 5%;
+    margin: 0;
+    padding: 2.8vw 5.3vw;
+}
+
+
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .5s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0px;
+}
+
+
+
+
+.nav .logo {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo:hover {
+    opacity: 50%;
+}
+
+.nav li.active a,
+.nav li a:hover {
+    padding: 10px;
+    border-radius: 5px;
+    /* border-bottom: 2px solid white; */
+    background: rgba(255, 255, 255, 0.135);
+    
+}
+
+
+
+
+/* Sección 1 */
+
+.s1 .title {
+    width: 700px;
+    height: 190px;
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.s1 .title h1 {
+    color: white;
+    font-size: 3.8vw;
+    font-weight: 550;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.s1 .title p {
+    color: white;
+    position: absolute;
+    top: 130%;
+    transform: translateY(-130%);
+    font-size: 1.6vw;
+    letter-spacing: 9px;
+    font-weight: 500;
+    transition: .5s;
+    opacity: .5;
+}
+
+.s1 .title p:hover {
+    letter-spacing: 12px;
+    opacity: 1;
+}
+
+.s1 .contenedorImg {
+    width: 56vw;
+    height: 40vw;
+    top: 60%;
+    left: 85%;
+    transform: translate(-85%, -60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.s1 .img {
+    width: 56vw;
+    height: 40vw;
+    background: black;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 30px black;
+    
+}
+
+.s1 .img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sección 2 */
+
+
+
+
+/* Imagenes De Einstein */
+
+.images {
+    width: 45vw;
+    height: 40vw;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+        /* Img1 */
+
+.images .i1 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 30vw;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: -5px 5px 15px black;
+}
+
+
+
+
+        /* Img2 */
+
+.images .i2 {
+    width: 10vw;
+    top: 70%;
+    left: 20%;
+    z-index: 3;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: -5px 5px 15px black;
+    
+}
+
+        /* Img3 */
+
+.images .i3 {
+    width: 14vw;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    box-shadow: -5px 5px 15px black;
+    
+}
+
+        /* Img4 */
+
+.images .i4 {
+    width: 15vw;
+    overflow: hidden;
+    z-index: 1;
+    top: 1%;
+    left: 60%;
+    position: absolute;
+    box-shadow: -5px 5px 15px black;
+    
+}
+
+
+        /* Img5 */
+
+.images .i5 {
+    width: 15vw;
+    top: 50%;
+    left: 60%;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    box-shadow: -5px 5px 15px black;
+    
+}
+
+/* Título pag2 */
+
+.s2 .about {
+    width: 35vw;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -40%);
+    position: absolute;
+}
+
+.s2 .about h3 {
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.s2 .prompt {
+    width: 35vw;
+    height: 5.2vw;
+    top: 62%;
+    left: 6.4%;
+    padding: 0.5vw;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.079);
+    border: 0.5px solid rgba(255, 255, 255, 0.241);
+    border-radius: 10px;
+}
+
+.s2 .prompt p {
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 0.8vw;
+}
+
+/* Flechitas s2 */
+
+.arrow {
+    position: absolute;
+    width: 2px;
+    height: 5vw;
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -55%);
+    background: white;
+}
+
+.dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: white;
+    top: 100%;
+    transform: translateX(-3px) rotate(45deg);
+}
+
+
+
+.arrow2 {
+    position: absolute;
+    width: 2vw;
+    height: 2px;
+    top: 67%;
+    left: 42.5%;
+    transform: translate(-42.5%, -67%);
+    background: white;
+}
+
+.dot2 {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: white;
+    left: 100%;
+    transform: translateY(-3px) rotate(45deg);
+}
+
+
+/* Sección 3 */
+
+
+.s3 .textoS3 {
+    width: 81vw;
+    height: 100px;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -13%);
+}
+
+.s3 .textoS3 h3 {
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.s3 .ejemplos {
+    width: 82vw;
+    height: 70%;
+    position: absolute;
+    top: 22%;
+    left: 8.5%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.3vw;
+    gap: 1vw;
+}
+
+.s3 .ejemplos .ejemplo {
+    max-width: 15vw;
+    max-height: 20vw;
+    position: relative;
+    border-radius: 0.5vw;
+    box-shadow: 0px 8px 30px black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    text-align: center;
+}
+
+.s3 .ejemplos .ejemplo img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+.s3 .ejemplos .ejemplo:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.s3 .ejemplos .ejemplo:hover img {
+    opacity: 50%;
+    filter: blur(5px);
+}
+
+/* Prompts seccion 3*/
+
+.s3 .ejemplos .ejemplo .text {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3 .ejemplos .ejemplo .text p {
+    position: absolute;
+    color: white;
+    font-size: 0.8vw;
+    font-style: italic;
+    opacity: 0;
+    transition: .2s;
+    top: 90%;
+    transform: translateY(-90%);
+}
+
+.s3 .ejemplos .ejemplo:hover .text p {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Versión Celu */
+
+@media (max-width: 450px){
+
+    
+
+    /* .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 20;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5vw;
+    }
+
+    .menu {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-45deg, #9143a4, #0b0c34, #3a548a, #23d5ab);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: gradient2 15s ease infinite;
+        transition: 1s ease-in-out;
+    }
+
+    
+
+    @keyframes gradient2 {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .menu.active {
+        top: 50%;
+    }
+
+    .nav ul li,
+    .nav ul li, a {
+        font-size: 8vw;
+        text-transform: uppercase;
+        font-weight: 500;
+    } */
+
+    /* @keyframes menuOpen {
+        from {
+            
+        } to {
+            top: 50%;
+        }
+    } */
+    
+    
+    /* .nav li {
+        position: absolute;
+    } */
+    
+    .botonNavegador {
+        position: fixed;
+        
+    }
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s ease;
+        z-index: 0;
+    }
+
+    
+    .nav.navActive {
+        z-index: 3;
+    }
+
+
+    .nav.navActive .menu{
+        transform: translate(0);
+        z-index: 100;
+
+    }
+    
+    
+
+    
+    
+    .nav .logo {
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        top: 8.5%;
+        left: 5%;
+        position: absolute;
+        
+
+        
+        
+    }
+    
+    /* .logo:hover {
+        opacity: 50%;
+    }
+    
+    .nav li.active a {
+        font-weight: 500;
+    } */
+
+    .nav .menu {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(200%);
+        background: linear-gradient(-45deg, #9143a4, #2f4163, #3a548a, #23d5ab);
+        transition: 1s ease;
+    }
+
+    .nav li,
+    .nav a {
+        display: inline-block;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        transition: .5s ease;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 7vw;
+    }
+
+
+
+    .logo {
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    
+    .nav li.active {
+        background: rgba(255, 255, 255, 0.118);
+        border-bottom: none;
+        width: 100%;
+        
+    }
+
+    .nav li.active a{
+        padding: 10px;
+        border-radius: 5px;
+        /* border-bottom: 2px solid white; */
+        background: none;
+        
+    }
+    
+    .nav li.active a {
+        border-bottom: none;
+    }
+    
+    /* botón navegador toggle */
+
+    .botonNavegador {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 50;
+        top: 6%;
+        right: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonNavegador .nav2 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        z-index: 51;
+    }
+
+    .botonNavegador .nav2 .btn1 {
+        width: 50px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+    }
+
+    .botonNavegador .nav2 .btn2 {
+        width: 50px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+    }
+
+
+    /* animacion btn */
+
+
+
+    .nav2.open .btn1 {
+
+        transform: rotate(45deg) translate(6px, 7px);
+    }
+
+    .nav2.open .btn2 {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+    
+    
+    
+    
+    
+    /* Sección 1 */
+    
+    .s1 .title {
+        width: 300px;
+        height: 40px;
+        position: absolute;
+        top: 30%;
+        left: 7%;
+        transform: translateY(-30%);
+        z-index: 2;
+    }
+    
+    .s1 .title h1 {
+        color: white;
+        font-size: 6vw;
+        font-weight: 550;
+        letter-spacing: 2px;
+        position: absolute;
+    }
+    
+    .s1 .title p {
+        color: white;
+        position: absolute;
+        top: 130%;
+        transform: translateY(-130%);
+        font-size: 2.3vw;
+        letter-spacing: 9px;
+        font-weight: 500;
+        transition: .5s;
+        opacity: .6;
+    }
+    
+    .s1 .title p:hover {
+        letter-spacing: 12px;
+        opacity: 1;
+    }
+
+    .s1 .contenedorImg {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+    }
+    
+    .s1 .img {
+        width: 54vw;
+        height: 36vw;
+        background: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.6);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -6px 10px 30px black;
+        
+    }
+    
+    .s1 .img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    /* Sección 2 */
+
+/* Imagenes De Einstein */
+
+    .images {
+        width: 80%;
+        height: 45vw;
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -75%);
+
+    }
+
+            /* Img1 */
+
+    .images .i1 {
+        z-index: 2;
+        width: 30vw;
+        overflow: hidden;
+        position: absolute;
+        box-shadow: -1px 1px 15px rgba(0, 0, 0, 0.423);
+        transform: scale(1.9) translateX(25%);
+    }
+
+
+
+
+            /* Img2 */
+
+    .images .i2 {
+        width: 10vw;
+        top: 89%;
+        left: 20%;
+        z-index: 3;
+        object-fit: cover;
+        position: absolute;
+        box-shadow: -5px 5px 15px black;
+        transform: scale(1.9) translateX(25%);
+        
+    }
+
+            /* Img3 */
+
+    .images .i3 {
+        width: 14vw;
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        box-shadow: -5px 5px 15px black;
+        transform: scale(1.9) translateX(25%);
+        
+    }
+
+            /* Img4 */
+
+    .images .i4 {
+        width: 15vw;
+        overflow: hidden;
+        z-index: 1;
+        left: 67%;
+        position: absolute;
+        box-shadow: -5px 5px 15px black;
+        transform: scale(1.9) translate(25%, -30%);
+        
+    }
+
+
+            /* Img5 */
+
+    .images .i5 {
+        width: 15vw;
+        top: 60%;
+        left: 65%;
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        box-shadow: -5px 5px 15px black;
+        transform: scale(1.9) translateX(25%);
+        
+    }
+
+    /* Título pag2 */
+
+    
+
+    .s2 .about {
+        width: 100%;
+        top: 20%;
+        left: 0;
+        transform: translate(0, -20%);
+        position: absolute;
+        padding: 0 7%;
+    }
+
+    .s2 .about h3 {
+        color: white;
+        font-size: 4vw;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .s2 .prompt {
+        width: 87vw;
+        height: 8%;
+        top: 37.5%;
+        left: 7%;
+        transform: translate(0%, -37.5%);
+        position: absolute;
+        padding: 2%;
+        background: rgba(255, 255, 255, 0.079);
+        border: 0.5px solid rgba(255, 255, 255, 0.241);
+        border-radius: 10px;
+    }
+
+    .s2 .prompt p {
+        color: white;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 2.5vw;
+    }
+
+    /* Flechitas s2 */
+
+    .arrow {
+        position: absolute;
+        width: 2px;
+        height: 7vw;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        background: white;
+    }
+
+    .dot {
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background: white;
+        top: 100%;
+        transform: translateX(-1.5px) rotate(45deg);
+    }
+
+    .arrow2 {
+        position: absolute;
+        width: 2px;
+        height: 7vw;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -46%);
+        background: white;
+    }
+
+    .dot2 {
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background: white;
+        top: 100%;
+        transform: translateX(-3.5px) rotate(45deg);
+    }
+
+    /* Sección 3 */
+
+
+    .s3 .textoS3 {
+        width: 100%;
+        height: 100px;
+        top: 15%;
+        position: absolute;
+        padding: 8%;
+    }
+
+    .s3 .textoS3 h3 {
+        color: white;
+        font-size: 3vw;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .s3 .ejemplos {
+        width: 82vw;
+        height: 50%;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-70%);
+        left: 8.5%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 0.3vw;
+        gap: 1vw;
+        z-index: 2;
+    }
+    
+    .s3 .ejemplos .ejemplo {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        border-radius: 2vw;
+        box-shadow: 0px 8px 30px black;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        text-align: center;
+    }
+    
+    .s3 .ejemplos .ejemplo img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+    }
+
+    #a3 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    #a6 {
+        grid-row: span 2;
+    }
+    
+    .s3 .ejemplos .ejemplo:hover {
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    
+    .s3 .ejemplos .ejemplo:hover img {
+        opacity: 50%;
+        filter: blur(5px);
+    }
+    
+    /* Prompts seccion 3*/
+    
+    .s3 .ejemplos .ejemplo .text {
+        width: 80%;
+        height: 90%;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .s3 .ejemplos .ejemplo .text p {
+        position: absolute;
+        color: white;
+        font-size: 1.5vw;
+        font-style: italic;
+        opacity: 0;
+        transition: .2s;
+        top: 90%;
+        transform: translateY(-90%);
+    }
+    
+    .s3 .ejemplos .ejemplo:hover .text p {
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    
+}
