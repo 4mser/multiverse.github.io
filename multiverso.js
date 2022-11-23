@@ -38,7 +38,7 @@ new fullpage('#fullpage',  {
         
 
         if(destination.index === 0) {
-          t5.fromTo(portada, 5, { opacity: 0}, {opacity: 1});
+          t5.fromTo(portada, 2, { opacity: 0}, {opacity: 1});
 
 
           
